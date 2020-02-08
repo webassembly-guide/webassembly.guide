@@ -26,7 +26,7 @@ Example of this speed improvements are:
 
 ## More programming languages in the Browser
 
-Thanks to the increased popularity of WebAssembly, more programming languages have been trying to compile into WebAssembly as a way to increase their adoption and use.
+Thanks to the adoption of WebAssembly, more programming languages have been trying to compile into WebAssembly as a way to increase their adoption and use.
 
 One great example of this is Rust. They embraced WebAssembly as a first-class citizen in their ecosystem and that increased their adoption allowing Rust programs to be usable in the Browser.
 

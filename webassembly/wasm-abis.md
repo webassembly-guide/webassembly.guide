@@ -1,9 +1,9 @@
 # Wasm ABIs
 
-An Application Binary Interface \(ABI\) is an interface between two binary program modules.  
-In the WebAssembly case we refer to ABI as the way WebAssembly Modules are going to interact with the host system.
+An application binary interface \(ABI\) is an interface between two binary program modules.  
+In the WebAssembly case, we refer to ABI as the way the Modules are going to interact with the host system.
 
-#### _**But... why the modules would like to interact with the host system?**_
+### _But... why the modules would like to interact with the host system?_
 
 Sometimes we would like the Modules to have capabilities that only the OS can fulfill, outside of pure compute power. For example, when trying to get the contents of a file, or when creating a socket to create a webserver.
 
