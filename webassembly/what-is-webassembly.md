@@ -38,9 +38,9 @@ WebAssembly, however took the learnings from both PNaCl and asm.js and emerged a
 
 ## Adoption
 
-Since the WebAssembly Minimum Viable Product \(MVP\) for the binary format was reached, WebAssembly has been increasing it's popularity allowing companies and developers run programs at incredible speeds in the browser
+Since the WebAssembly Minimum Viable Product \(MVP\) for the binary format was reached, WebAssembly has been increasing it's popularity allowing companies and developers run programs at incredible speeds in the browser.
 
-Also, a new trend emerged by leveraging on the speed, safety and portability of WebAssembly as a way to run programs server-side \(outside of the browser\).
+Also, a new trend emerged by leveraging on the speed, safety and portability of WebAssembly server-side \(outside of the browser\).
 
 Companies like [CloudFlare](https://www.cloudflare.com/), [Fastly](https://www.fastly.com/) and [Wasmer](https://wasmer.io/) created their own standalone WebAssembly runtimes to run Wasm server-side \(think of what Node.js did to run JavaScript server-side, but for WebAssembly\).
 

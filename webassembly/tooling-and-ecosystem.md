@@ -8,7 +8,7 @@ Here we will analyze the most popular ones:
 
 WebAssembly.Studio is an online IDE \(Integrated Development Environment\) that will help you learn and play with WebAssembly.
 
-\(screenshot\)
+![](../.gitbook/assets/screen-shot-2020-02-07-at-6.02.07-pm.png)
 
 ### Visual Studio Code Extension
 
@@ -16,11 +16,9 @@ There is a great extension for Visual Studio Code that adds WebAssembly support 
 
 Including WebAssembly validation, and conversion to and from the binary and text format.
 
-\(screenshot\)
+![](../.gitbook/assets/image.png)
 
-Install the extension here:
-
-[https://marketplace.visualstudio.com/items?itemName=dtsvet.vscode-wasm](https://marketplace.visualstudio.com/items?itemName=dtsvet.vscode-wasm)
+You can install the extension here:[ https://marketplace.visualstudio.com/items?itemName=dtsvet.vscode-wasm](https://marketplace.visualstudio.com/items?itemName=dtsvet.vscode-wasm)
 
 ### wabt
 
@@ -33,7 +31,7 @@ Here are their most popular ones:
 * [**wasm-strip**](https://webassembly.github.io/wabt/doc/wasm-strip.1.html): remove sections of a WebAssembly binary file \(to optimize file size\)
 * [**wasm-validate**](https://webassembly.github.io/wabt/doc/wasm-validate.1.html): validate a WebAssembly binary file
 
-[https://github.com/WebAssembly/wabt](https://github.com/WebAssembly/wabt)
+{% embed url="https://github.com/WebAssembly/wabt" %}
 
 ### Binaryen
 
@@ -42,6 +40,8 @@ Compiler infrastructure and toolchain library for WebAssembly.
 Their most popular tool is:
 
 * **wasm-opt**: Optimizes WebAssembly binaries to reduce file size or improve speed
+
+{% embed url="https://github.com/WebAssembly/binaryen/" %}
 
 ### WAPM
 
