@@ -20,22 +20,22 @@ Here are some of the use cases for using WebAssembly server-side:
 
 Previously, programs could only be run in a specific platform and architecture. For example, Windows programs couldn't run on Mac \(different platform\), or Mobile programs can't run in Desktop \(different architecture\).
 
-The main reason why is was technical: the program binary was only executable in the platform and architecture was created on.
+The main reason why is because the binary result of this programs was only executable in the platform and architecture was created on.
 
-However, there were other solutions like the JVM or OS-based containers \(such as Docker\) that opened the possibility to run a single bytecode file universally.
+However, there were other solutions like the JVM or OS-based containers \(such as Docker\) that opened the possibility to run one bytecode file universally.
 
 However, this two approaches are not as good as WebAssembly for universal programs. Here's why:
 
-* The JVM is a very solid, but heavy VM. Just the JVM VM and framework is around 200Mb. Apart fromt his, its bytecode format is not as low level as Wasm.
+* The JVM is a very solid, but heavy VM. Just the JVM VM and framework is around 200Mb. It's bytecode format is not as low level as Wasm.
 * Docker is an OS-based container. That means that it has an entire OS in the container in order to be able to run your program. This makes Docker containers both slow on initialization and heavy on size compared to WebAssembly programs. At the same time, Docker containers are platform agnostic, but chipset dependent.
 
 ## Edge Computing & IoT
 
-Cloud Computing was the first trend that allowed applications and companies to scale easily without worrying about physical servers. However, once most of the companies embraced this trend, the computing power became more centralized into fewer hands \(namely Amazon Web Services, Microsoft Azure and Google Cloud\).
+Cloud Computing was the first trend that allowed applications and companies to scale easily without worrying about physical servers. However, once most of the companies embraced this wave, the computing power became more centralized into fewer hands \(Amazon Web Services, Microsoft Azure and Google Cloud\).
 
-Thanks to new trends like 5G, we have now the opportunity to run software in places that were impossible before \(routers, IoT devices...\), which leads into a more decentralized ecosystem.
+Thanks to new waves like 5G, we have now the opportunity to run untrusted software in places that were impossible before \(routers, IoT devices...\), which leads into a more decentralized ecosystem.
 
-Because of that, WebAssembly is the perfect contender for Edge Computing as it allows running software on this places in a light, universal and safe way.
+Because of that, WebAssembly is the perfect contender for Edge Computing, as it allows running software on this places in a light, universal and safe way.
 
 ## Universal Libraries / Plugins
 
