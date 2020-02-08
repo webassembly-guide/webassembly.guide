@@ -10,5 +10,5 @@ The free and open-source tutorial to **learn** all around WebAssembly **from zer
 
 ### 
 
-Let's start with the basics:s
+Shall we begin? :\)
 
