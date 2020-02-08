@@ -4,13 +4,13 @@ The WebAssembly ecosystem is constantly growing. There are a lot of diverse tool
 
 Here we will analyze the most popular ones:
 
-### WebAssembly Studio
+### 🖥 WebAssembly Studio
 
 [WebAssembly.Studio](https://webassembly.studio/) is an online IDE \(Integrated Development Environment\) that will help you learn and play with WebAssembly.
 
 ![](../.gitbook/assets/screen-shot-2020-02-07-at-7.14.19-pm.png)
 
-### Visual Studio Code Extension
+### ⚙️ Visual Studio Code Extension
 
 There is a great extension for Visual Studio Code that adds WebAssembly support into the IDE.  
 Including WebAssembly validation, and conversion to and from the binary and text format.
@@ -19,7 +19,7 @@ You can install the extension here:[ https://marketplace.visualstudio.com/items?
 
 ![](../.gitbook/assets/preview-2.png)
 
-### wabt
+### 🔧 wabt
 
 The WebAssembly Binary Toolkit. It's a collection of tools that let you manipulate WebAssembly files easily.
 
@@ -32,7 +32,7 @@ Here are their most popular ones:
 
 {% embed url="https://github.com/WebAssembly/wabt" %}
 
-### Binaryen
+### 🔩 Binaryen
 
 Compiler infrastructure and toolchain library for WebAssembly.
 
@@ -42,7 +42,7 @@ Their most popular tool is:
 
 {% embed url="https://github.com/WebAssembly/binaryen/" %}
 
-### WAPM
+### 📦 WAPM
 
 The WebAssembly Package Manager. It's a centralized repository where developers and companies can install, publish and use WebAssembly packages.
 
