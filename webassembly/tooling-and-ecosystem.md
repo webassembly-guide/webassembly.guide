@@ -8,17 +8,16 @@ Here we will analyze the most popular ones:
 
 WebAssembly.Studio is an online IDE \(Integrated Development Environment\) that will help you learn and play with WebAssembly.
 
-![](../.gitbook/assets/screen-shot-2020-02-07-at-6.02.07-pm.png)
+![](../.gitbook/assets/screen-shot-2020-02-07-at-7.14.19-pm.png)
 
 ### Visual Studio Code Extension
 
-There is a great extension for Visual Studio Code that adds WebAssembly support into the IDE.
-
+There is a great extension for Visual Studio Code that adds WebAssembly support into the IDE.  
 Including WebAssembly validation, and conversion to and from the binary and text format.
 
-![](../.gitbook/assets/image.png)
-
 You can install the extension here:[ https://marketplace.visualstudio.com/items?itemName=dtsvet.vscode-wasm](https://marketplace.visualstudio.com/items?itemName=dtsvet.vscode-wasm)
+
+![](../.gitbook/assets/preview-2.png)
 
 ### wabt
 
