@@ -32,7 +32,7 @@ PNaCl was a great technical advance, but it only got support from one vendor: Go
 
 WebAssembly, however took the learnings from both PNaCl and asm.js and emerged as a new standard now adopted by all industry \(Google, Mozilla and Apple\).
 
-### Video: What is WebAssembly?
+### What is WebAssembly?
 
 {% embed url="https://www.youtube.com/watch?v=fvkIQfRZ-Y0" %}
 
@@ -46,10 +46,12 @@ Companies like [CloudFlare](https://www.cloudflare.com/), [Fastly](https://www.f
 
 ## Format
 
-WebAssembly bytecode \(the code that express a program\) can be represented in two ways:
+WebAssembly code \(the code that express a program\) can be expressed in two ways:
 
 * Binary
 * Text
+
+#### WebAssembly Binary Format
 
 The binary format is designed to be:
 
@@ -57,10 +59,10 @@ The binary format is designed to be:
 * Easy to extend: so as WebAssembly evolves it minimizes the breaking changes
 * Fast to parse: so the WebAssembly runtimes do minimal effort when processing WebAssembly bytecode
 
-Here's the normative documentation for the binary format specification: [https://webassembly.github.io/spec/core/binary/index.html](https://webassembly.github.io/spec/core/binary/index.html)
-
 Here's an example of a WebAssembly binary bytecode:
 
+{% tabs %}
+{% tab title="add.wasm \(binary format\)" %}
 ```text
 0061 736d                                 ; WASM_BINARY_MAGIC
 0100 0000                                 ; WASM_BINARY_VERSION
@@ -101,12 +103,22 @@ Here's an example of a WebAssembly binary bytecode:
 07                                        ; FIXUP func body size
 09                                        ; FIXUP section size
 ```
+{% endtab %}
+{% endtabs %}
 
-As you can see, the binary text is not readable by humans \(at least easily\).
+As you can see, the binary file is not easily readable by humans.
+
+{% hint style="info" %}
+Here's the normative documentation for the binary format specification: [https://webassembly.github.io/spec/core/binary/index.html](https://webassembly.github.io/spec/core/binary/index.html)
+{% endhint %}
+
+#### WebAssembly Text Format
 
 Because of that, the WebAssembly core team also created a text format translatable to the binary format:
 
-```text
+{% tabs %}
+{% tab title="add.wat" %}
+```haskell
 (module
   (func $add (param $lhs i32) (param $rhs i32) (result i32)
     local.get $lhs
@@ -115,8 +127,12 @@ Because of that, the WebAssembly core team also created a text format translatab
   (export "add" (func $add))
 )
 ```
+{% endtab %}
+{% endtabs %}
 
+{% hint style="info" %}
 Here's the normative documentation for the WebAssembly text format specification: [https://webassembly.github.io/spec/core/text/index.html](https://webassembly.github.io/spec/core/text/index.html)
+{% endhint %}
 
 ## **Which of these statements is true?**
 
