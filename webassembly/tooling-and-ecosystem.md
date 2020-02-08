@@ -51,10 +51,10 @@ You can visit the WAPM website here: [https://wapm.io/](https://wapm.io/)
 
 ## Server-side Runtimes
 
-Right now there are tons of server-side runtimes. Here are the most popular ones \(by:
+Right now there are tons of server-side runtimes. Here are the most popular ones \(alphabetically ordered\):
 
-* wasm3: a fast and lightweight interpreter that can execute WebAssembly in IoT devices
-* Wasmer: a full WebAssembly JIT compatible with Emscripten and WASI
-* WAVM: a WebAssembly runtime based on LLVM compatible with WASI
-* Wasm-micro-runtime: A micro runtime for WebAssembly
+* [wasm3](https://github.com/wasm3/wasm3): a fast and lightweight interpreter that can execute WebAssembly in IoT devices
+* [Wasmer](https://github.com/wasmerio/wasmer): a full WebAssembly JIT compatible with Emscripten and WASI
+* [WAVM](https://github.com/wavm/wavm): a WebAssembly runtime based on LLVM compatible with WASI
+* [Wasm-micro-runtime](https://github.com/bytecodealliance/wasm-micro-runtime): A micro runtime for WebAssembly
 
