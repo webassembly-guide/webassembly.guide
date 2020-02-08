@@ -57,13 +57,13 @@ The binary format is designed to be:
 
 * Small: so the WebAssembly program size is as small as possible
 * Easy to extend: so as WebAssembly evolves it minimizes the breaking changes
-* Fast to parse: so the runtimes do minimal effort reading the bytecode
+* Fast to parse: so the WebAssembly runtimes do minimal effort when processing WebAssembly bytecode
 
-Here's an example of a WebAssembly binary file:
+Here's an example of a WebAssembly binary bytecode:
 
 {% tabs %}
 {% tab title="add.wasm \(binary format\)" %}
-```scheme
+```text
 0061 736d                                 ; WASM_BINARY_MAGIC
 0100 0000                                 ; WASM_BINARY_VERSION
 01                                        ; section code
@@ -109,7 +109,7 @@ Here's an example of a WebAssembly binary file:
 As you can see, the binary file is not easily readable by humans.
 
 {% hint style="info" %}
-You can find more info in the normative documentation for the binary format specification: [https://webassembly.github.io/spec/core/binary/index.html](https://webassembly.github.io/spec/core/binary/index.html)
+Here's the normative documentation for the binary format specification: [https://webassembly.github.io/spec/core/binary/index.html](https://webassembly.github.io/spec/core/binary/index.html)
 {% endhint %}
 
 #### WebAssembly Text Format
@@ -133,7 +133,7 @@ Here's a snippet of the previous WebAssembly program in it's text representation
 {% endtabs %}
 
 {% hint style="info" %}
-You can find more info in the normative documentation for the WebAssembly text format specification: [https://webassembly.github.io/spec/core/text/index.html](https://webassembly.github.io/spec/core/text/index.html)
+Here's the normative documentation for the WebAssembly text format specification: [https://webassembly.github.io/spec/core/text/index.html](https://webassembly.github.io/spec/core/text/index.html)
 {% endhint %}
 
 ## **Which of these statements is true?**
