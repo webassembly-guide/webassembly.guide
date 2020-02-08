@@ -114,10 +114,12 @@ Here's the normative documentation for the binary format specification: [https:/
 
 #### WebAssembly Text Format
 
-Because of that, the WebAssembly core team also created a text format translatable to the binary format:
+Because of that, the WebAssembly core team also created a text format translatable to the binary format.
+
+Here's a snippet of the previous WebAssembly program in it's text representation:
 
 {% tabs %}
-{% tab title="add.wat" %}
+{% tab title="add.wat \(text format\)" %}
 ```haskell
 (module
   (func $add (param $lhs i32) (param $rhs i32) (result i32)
