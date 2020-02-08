@@ -8,23 +8,21 @@ By using WebAssembly on the browser, we can:
 * Increase the speed of our Javascript applications, removing bottlenecks on CPU-intensive computations
 * Use more programming languages in our web apps \(other than JS\)
 
-## Why WebAssembly is faster than JavaScript?
+## Why is WebAssembly faster than JavaScript?
 
-Over the years the browsers have been battling to increase to the max the speed of JavaScript programs in the browser.
+Over the years the browsers have been competing to improve the speed of JavaScript programs in the browser. That lead to state of the art JS runtimes, such as:
 
-That lead to state of the art runtimes, such as:
-
-* V8 \(the JS engine of Google Chrome\)
+* V8 \(Google Chrome\)
 * JavascriptCore \(Safari\)
 * SpiderMonkey \(Firefox\)
 
-However, when running a simple JS program, the Javascript VMs need to do a lot of checks to conform to the JS specification. That means, for example, that each time we
+However, when running a simple JS program, the Javascript VMs need to do a lot of checks to conform to the JS specification. On the other side, Wasm programs are compiled and optimized ahead of time.
 
 In that sense, the WebAssembly specification is much more low-level than JS. That means that it's easier to translate its bytecode to something the machine can run \(with fewer checks\), leading to much faster speeds.
 
 Example of this speed improvements are:
 
-* Tensorflow
+* Tensorflow: it achieved 2x speed
 
 ## More programming languages in the Browser
 

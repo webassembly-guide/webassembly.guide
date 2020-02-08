@@ -34,7 +34,7 @@ WebAssembly, however took the learnings from both PNaCl and asm.js and emerged a
 
 ### Video: What is WebAssembly?
 
-[https://www.youtube.com/watch?v=fvkIQfRZ-Y0](https://www.youtube.com/watch?v=fvkIQfRZ-Y0)
+{% embed url="https://www.youtube.com/watch?v=fvkIQfRZ-Y0" %}
 
 ## Adoption
 
@@ -42,7 +42,7 @@ Since the WebAssembly Minimum Viable Product \(MVP\) for the binary format was r
 
 Also, a new trend emerged by leveraging on the speed, safety and portability of WebAssembly as a way to run programs server-side \(outside of the browser\).
 
-Companies like CloudFlare, Fastly and Wasmer created their own standalone WebAssembly runtimes \(think of what Node.js did to run JavaScript server-side, but for WebAssembly\).
+Companies like [CloudFlare](https://www.cloudflare.com/), [Fastly](https://www.fastly.com/) and [Wasmer](https://wasmer.io/) created their own standalone WebAssembly runtimes to run Wasm server-side \(think of what Node.js did to run JavaScript server-side, but for WebAssembly\).
 
 ## Format
 
@@ -61,12 +61,59 @@ Here's the normative documentation for the binary format specification: [https:/
 
 Here's an example of a WebAssembly binary bytecode:
 
+```text
+0061 736d                                 ; WASM_BINARY_MAGIC
+0100 0000                                 ; WASM_BINARY_VERSION
+01                                        ; section code
+00                                        ; section size
+01                                        ; num types
+60                                        ; func
+02                                        ; num params
+7f                                        ; i32
+7f                                        ; i32
+01                                        ; num results
+7f                                        ; i32
+07                                        ; FIXUP section size
+03                                        ; section code
+00                                        ; section size (guess)
+01                                        ; num functions
+00                                        ; function 0 signature index
+02                                        ; FIXUP section size
+07                                        ; section code
+00                                        ; section size (guess)
+01                                        ; num exports
+03                                        ; string length
+6164 64                                   ; export name "add"
+00                                        ; export kind
+00                                        ; export func index
+07                                        ; FIXUP section size
+0a                                        ; section code
+00                                        ; section size
+01                                        ; num functions
+00                                        ; func body size
+00                                        ; local decl count
+20                                        ; local.get
+00                                        ; local index
+20                                        ; local.get
+01                                        ; local index
+6a                                        ; i32.add
+0b                                        ; end
+07                                        ; FIXUP func body size
+09                                        ; FIXUP section size
+```
+
 As you can see, the binary text is not readable by humans \(at least easily\).
 
 Because of that, the WebAssembly core team also created a text format translatable to the binary format:
 
 ```text
-# Example text format
+(module
+  (func $add (param $lhs i32) (param $rhs i32) (result i32)
+    local.get $lhs
+    local.get $rhs
+    i32.add)
+  (export "add" (func $add))
+)
 ```
 
 Here's the normative documentation for the WebAssembly text format specification: [https://webassembly.github.io/spec/core/text/index.html](https://webassembly.github.io/spec/core/text/index.html)
