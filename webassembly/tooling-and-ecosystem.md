@@ -47,3 +47,14 @@ Their most popular tool is:
 
 The WebAssembly Package Manager. It's a centralized repository where developers and companies can install, publish and use WebAssembly packages.
 
+You can visit the WAPM website here: [https://wapm.io/](https://wapm.io/)
+
+## Server-side Runtimes
+
+Right now there are tons of server-side runtimes. Here are the most popular ones \(by:
+
+* wasm3: a fast and lightweight interpreter that can execute WebAssembly in IoT devices
+* Wasmer: a full WebAssembly JIT compatible with Emscripten and WASI
+* WAVM: a WebAssembly runtime based on LLVM compatible with WASI
+* Wasm-micro-runtime: A micro runtime for WebAssembly
+

@@ -1,12 +1,8 @@
 # Security
 
-Is WebAssembly secure and sandboxed? If so... how secure?WebAssembly is specified to be run in a safe, sandboxed execution environment.
+WebAssembly is designed to be completely sandboxed. This is of critical importance for assuring maximum security of webpages. We would never like to visit a website and allow them to steal information from us. The same way that websites are sandboxed and safe, so should be WebAssembly.
 
 ### Why?
-
-WebAssembly was designed to be sandboxed. This is of critical importance for the security of webpages. We would never like to visit a website and allow them to steal information from us. The same way that websites are sandboxed and safe, so should be WebAssembly.
-
-### How?
 
 These are the main reasons WebAssembly is secure:
 
