@@ -6,7 +6,7 @@ Here we will analyze the most popular ones:
 
 ### WebAssembly Studio
 
-WebAssembly.Studio is an online IDE \(Integrated Development Environment\) that will help you learn and play with WebAssembly.
+[WebAssembly.Studio](https://webassembly.studio/) is an online IDE \(Integrated Development Environment\) that will help you learn and play with WebAssembly.
 
 ![](../.gitbook/assets/screen-shot-2020-02-07-at-7.14.19-pm.png)
 
