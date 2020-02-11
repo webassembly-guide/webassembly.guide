@@ -26,7 +26,7 @@ However, there were other solutions like the JVM or OS-based containers \(such a
 
 However, this two approaches are not as good as WebAssembly for universal programs. Here's why:
 
-* The JVM is a very solid, but heavy VM. Just the JVM VM and framework is around 200Mb. Apart fromt his, its bytecode format is not as low level as Wasm.
+* The JVM is a very solid, but heavy VM. Just the JVM VM and framework is around 200Mb. Apart from this, the JVM can't run easily in a browser, and it's evolution is mainly leaded by one private entity \(Oracle\) rather than a standard committee like in the case of Wasm.
 * Docker is an OS-based container. That means that it has an entire OS in the container in order to be able to run your program. This makes Docker containers both slow on initialization and heavy on size compared to WebAssembly programs. At the same time, Docker containers are platform agnostic, but chipset dependent.
 
 ## Edge Computing & IoT
